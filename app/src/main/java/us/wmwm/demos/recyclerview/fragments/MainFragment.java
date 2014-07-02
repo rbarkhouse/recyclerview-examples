@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import us.wmwm.demos.recyclerview.R;
+import us.wmwm.demos.recyclerview.adapters.StateAdapter;
 
 public class MainFragment extends Fragment {
 
@@ -33,7 +34,7 @@ public class MainFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        recycler.setAdapter(new us.wmwm.demos.recyclerview.fragments.StateAdapter());
+        recycler.setAdapter(new StateAdapter());
     }
 
     public static MainFragment newInstance() {
